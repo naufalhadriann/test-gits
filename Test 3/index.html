@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* membuat variabel */
+    --bg-color: white;
+    --second-bg-color:#212020 ;
+    --text-color: black;
+    --main-color:#387ADF;
+}
+body {
+    
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+section{
+    min-height: 60vh;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo img{
+    cursor: default;
+    height: 20;
+    width: 30;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-left: 2rem;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: var(--main-color);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content p {
+    font-size: 75px;
+    margin-right: 100px;
+    color:#387ADF;
+}
+.home-content span{
+    color: black;
+}
+.home-content h1{
+    font-size: 60px;
+    text-align: center;
+}
+.services img{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+.services-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0.4rem;
+    transform: translateY(100%);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.services-layer p {
+    display: flex;
+    font-size: 10px;
+    margin: 0.3rem 0 1rem;
+    color: white;
+}
+.services-layer{
+    display: inline-flex;
+    margin-left: 60px;
+}
+
+
+</style>
+<body>
+   <header class="header">
+        
+      <a href="#">
+        <img src="https://gits.id/wp-content/uploads/2023/10/Logo-Main.png">
+      </a>
+      
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">Our Works</a>
+        <a href="#services">Solutions</a>
+        <a href="#portofolio">About</a>
+        <a href="#contact">Insight</a>
+      </nav>
+
+       <div class="contact">
+            <button type="button" style="color:white; background-color:#387ADF; height: 45px; border-radius: 5px; border: #50C4ED; width: 150px;">
+                Contact Us!
+            </button>
+     </div>
+     </header>
+
+    <section id="home" class="home">
+      <div class="home-content">
+        <div class="greetings">
+        <p>Build<span>,</span>integrate<span>,</span>manage</p>
+        <h1>your digital system with us</h1>
+        </div> 
+    </div>
+        </section>
+
+        <section>
+            <div class="services">
+                <img src="ser.jpg">
+                <div class="services-layer">
+                    <p><span style="color: #387ADF;">GITS.ID</span>is your partner to archive you business
+                    goals and improve your company productivity,powered by valuable Insights and Artificial Intelligence through IT solutions.</p>
+                </div>
+               
+            </div>
+        </section>
+</html>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        arr1 = [100,100,50,40,40,20,10]
+    arr2 = [5,25, 50,120]
+
+    for(let i = 0; i < arr2.length; i++){
+        let rank = 1;
+        for(let j = 0; j < arr1.length; j++){
+            if(arr1[j] != arr1[j+1] && arr1[j] >= arr2[i]){
+                rank ++;
+            }
+        }
+        console.log(rank)
+    }
+    </script>
+</body>
+</html>
